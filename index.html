@@ -3,879 +3,318 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>김진태 공약 이행률 팩트체크 | 93.7% 뒤의 강원도 성적표</title>
-<meta name="description" content="공약 이행률 93.7% 주장 뒤에 숨은 강원도의 SA 미달, 재정확보 부진, 공약 개수 혼선을 팩트체크합니다.">
-<meta property="og:title" content="93.7% 자랑 뒤에 숨은 강원도의 초라한 성적표">
-<meta property="og:description" content="SA 등급 0개, 재정확보율 25.94%, 집행률 21.26%, 완료 공약 12개. 숫자로 확인한 김진태 도정 공약 팩트체크.">
+<title>김진태 공약 이행률 팩트체크 | 공알못 도지사의 93.7%</title>
+<meta name="description" content="김진태 후보의 공약 이행률 93.7% 발언을 매니페스토 기준으로 팩트체크합니다. 공약 숫자 혼선, 66.93%, 완료 12건, SA 등급 0개를 정리했습니다.">
+<meta property="og:title" content="김진태, 자기 공약도 모르는 ‘공알못’ 도지사?">
+<meta property="og:description" content="200개라더니 165개, 실제 매니페스토 기준은 127개. 93.7%라더니 완료·이행은 66.93%, 완전 완료는 12건뿐.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="jtfact_og.png">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<meta property="og:image" content="og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700;900&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0f0f0f;
-    --surface: #1a1a1a;
-    --surface2: #242424;
-    --accent-red: #e63946;
-    --accent-gold: #f4a261;
-    --accent-green: #2a9d8f;
-    --accent-blue: #457b9d;
-    --text: #f1f1f1;
-    --text-muted: #888;
-    --border: #333;
+    --bg:#0b0b0c;
+    --surface:#171717;
+    --surface2:#232323;
+    --surface3:#2d2d2d;
+    --red:#ef233c;
+    --red2:#b80f24;
+    --gold:#f4a261;
+    --green:#2a9d8f;
+    --blue:#457b9d;
+    --text:#f5f5f5;
+    --muted:#9b9b9b;
+    --dim:#666;
+    --border:#343434;
+    --white:#fff;
   }
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: 'Noto Sans KR', sans-serif;
-    line-height: 1.6;
-    overflow-x: hidden;
-  }
-
-  /* ─── HERO ─── */
-  .hero {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 40px 24px;
-    background:
-      radial-gradient(ellipse 80% 60% at 50% 0%, rgba(230,57,70,0.15) 0%, transparent 60%),
-      var(--bg);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image:
-      repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(255,255,255,0.02) 40px),
-      repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(255,255,255,0.02) 40px);
-  }
-
-  .hero-tag {
-    font-size: 11px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: var(--accent-red);
-    border: 1px solid var(--accent-red);
-    padding: 6px 16px;
-    margin-bottom: 32px;
-    display: inline-block;
-    animation: fadeIn 0.6s ease both;
-  }
-
-  .hero h1 {
-    font-family: 'Noto Serif KR', serif;
-    font-size: clamp(28px, 6vw, 64px);
-    font-weight: 900;
-    line-height: 1.2;
-    margin-bottom: 16px;
-    animation: fadeIn 0.6s 0.1s ease both;
-  }
-
-  .hero h1 em {
-    color: var(--accent-red);
-    font-style: normal;
-  }
-
-  .hero-sub {
-    font-size: clamp(14px, 2vw, 18px);
-    color: var(--text-muted);
-    max-width: 560px;
-    animation: fadeIn 0.6s 0.2s ease both;
-  }
-
-  .hero-scroll {
-    position: absolute;
-    bottom: 32px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 11px;
-    letter-spacing: 3px;
-    color: var(--text-muted);
-    animation: bounce 2s infinite;
-  }
-
-  /* ─── SECTION ─── */
-  section {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 80px 24px;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .section-label {
-    font-size: 10px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: var(--accent-gold);
-    margin-bottom: 12px;
-  }
-
-  h2 {
-    font-family: 'Noto Serif KR', serif;
-    font-size: clamp(22px, 4vw, 36px);
-    font-weight: 700;
-    margin-bottom: 32px;
-    line-height: 1.3;
-  }
-
-  h2 .hl { color: var(--accent-red); }
-  h2 .hl-green { color: var(--accent-green); }
-  h2 .hl-gold { color: var(--accent-gold); }
-
-  /* ─── DEBATE CARD ─── */
-  .debate-box {
-    background: var(--surface);
-    border-radius: 12px;
-    padding: 32px;
-    margin-bottom: 24px;
-    border-left: 4px solid var(--accent-gold);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .debate-box.red { border-left-color: var(--accent-red); }
-  .debate-box.green { border-left-color: var(--accent-green); }
-
-  .speaker-tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    padding: 4px 12px;
-    border-radius: 99px;
-    margin-bottom: 16px;
-  }
-
-  .tag-kim { background: rgba(244,162,97,0.15); color: var(--accent-gold); border: 1px solid rgba(244,162,97,0.3); }
-  .tag-woo { background: rgba(69,123,157,0.15); color: #74b3ce; border: 1px solid rgba(69,123,157,0.3); }
-  .tag-fact { background: rgba(230,57,70,0.15); color: var(--accent-red); border: 1px solid rgba(230,57,70,0.3); }
-
-  .debate-quote {
-    font-size: clamp(15px, 2.5vw, 18px);
-    line-height: 1.7;
-    color: var(--text);
-  }
-
-  .debate-quote strong {
-    font-size: clamp(24px, 5vw, 40px);
-    font-family: 'Noto Serif KR', serif;
-    font-weight: 900;
-    display: block;
-    margin: 8px 0;
-    color: var(--accent-gold);
-  }
-
-  .debate-quote strong.red { color: var(--accent-red); }
-  .debate-quote strong.green { color: var(--accent-green); }
-
-  .fact-check-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    background: rgba(230,57,70,0.1);
-    border: 1px solid rgba(230,57,70,0.4);
-    border-radius: 8px;
-    padding: 10px 16px;
-    margin-top: 16px;
-    font-size: 13px;
-    color: var(--accent-red);
-    font-weight: 500;
-  }
-
-  /* ─── BIG NUMBERS ─── */
-  .stat-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 16px;
-    margin-bottom: 32px;
-  }
-
-  .stat-card {
-    background: var(--surface);
-    border-radius: 12px;
-    padding: 24px;
-    text-align: center;
-    border: 1px solid var(--border);
-    transition: transform 0.2s;
-  }
-
-  .stat-card:hover { transform: translateY(-4px); }
-
-  .stat-number {
-    font-family: 'Noto Serif KR', serif;
-    font-size: clamp(32px, 6vw, 52px);
-    font-weight: 900;
-    line-height: 1;
-    margin-bottom: 8px;
-  }
-
-  .stat-label {
-    font-size: 12px;
-    color: var(--text-muted);
-    line-height: 1.4;
-  }
-
-  .num-red { color: var(--accent-red); }
-  .num-gold { color: var(--accent-gold); }
-  .num-green { color: var(--accent-green); }
-  .num-blue { color: var(--accent-blue); }
-
-  /* ─── VISUAL BAR ─── */
-  .bar-wrapper {
-    margin: 32px 0;
-  }
-
-  .bar-label {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 8px;
-    font-size: 13px;
-    color: var(--text-muted);
-  }
-
-  .bar-label strong { color: var(--text); }
-
-  .bar-track {
-    height: 20px;
-    background: var(--surface2);
-    border-radius: 99px;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .bar-fill {
-    height: 100%;
-    border-radius: 99px;
-    transition: width 1.2s cubic-bezier(0.4,0,0.2,1);
-    width: 0;
-  }
-
-  .bar-fill.animated { width: var(--w); }
-
-  .bar-fill-red { background: linear-gradient(90deg, #c1121f, var(--accent-red)); }
-  .bar-fill-gold { background: linear-gradient(90deg, #e76f51, var(--accent-gold)); }
-  .bar-fill-green { background: linear-gradient(90deg, #168aad, var(--accent-green)); }
-
-  /* ─── PROMISE STATUS ─── */
-  .promise-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 8px;
-    margin: 24px 0;
-  }
-
-  .promise-dot {
-    height: 32px;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 11px;
-    font-weight: 500;
-  }
-
-  .dot-done { background: rgba(42,157,143,0.25); color: var(--accent-green); border: 1px solid rgba(42,157,143,0.4); }
-  .dot-ongoing { background: rgba(244,162,97,0.15); color: var(--accent-gold); border: 1px solid rgba(244,162,97,0.3); }
-  .dot-normal { background: rgba(69,123,157,0.15); color: #74b3ce; border: 1px solid rgba(69,123,157,0.3); }
-  .dot-partial { background: rgba(230,57,70,0.1); color: #f48c06; border: 1px solid rgba(244,140,6,0.3); }
-  .dot-dead { background: rgba(100,100,100,0.15); color: #888; border: 1px solid #444; }
-
-  /* ─── FINANCE BLOCKS ─── */
-  .finance-bar-big {
-    background: var(--surface);
-    border-radius: 12px;
-    padding: 28px;
-    margin-bottom: 16px;
-    border: 1px solid var(--border);
-  }
-
-  .finance-bar-big .title {
-    font-size: 14px;
-    color: var(--text-muted);
-    margin-bottom: 12px;
-  }
-
-  .finance-bar-big .amount {
-    font-family: 'Noto Serif KR', serif;
-    font-size: clamp(20px, 3vw, 28px);
-    font-weight: 700;
-    margin-bottom: 16px;
-  }
-
-  .stacked-bar {
-    height: 28px;
-    border-radius: 99px;
-    overflow: hidden;
-    display: flex;
-    background: var(--surface2);
-  }
-
-  .stacked-bar .s1 { background: #264653; }
-  .stacked-bar .s2 { background: #2a9d8f; }
-  .stacked-bar .s3 { background: #e9c46a; }
-  .stacked-bar .s4 { background: #f4a261; }
-
-  .stacked-legend {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 12px;
-    font-size: 12px;
-    color: var(--text-muted);
-  }
-
-  .stacked-legend span { display: flex; align-items: center; gap: 6px; }
-  .dot-12 { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
-
-  /* ─── ZERO SECURED TABLE ─── */
-  .zero-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .zero-item {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 16px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-
-  .zero-name {
-    font-size: 14px;
-    font-weight: 500;
-    flex: 1;
-  }
-
-  .zero-amount {
-    font-family: 'Noto Serif KR', serif;
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--text-muted);
-    white-space: nowrap;
-  }
-
-  .zero-badge {
-    font-size: 11px;
-    font-weight: 700;
-    padding: 4px 10px;
-    border-radius: 99px;
-    background: rgba(230,57,70,0.1);
-    color: var(--accent-red);
-    border: 1px solid rgba(230,57,70,0.3);
-    white-space: nowrap;
-  }
-
-  /* ─── DEFINITION BOX ─── */
-  .def-compare {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    margin: 24px 0;
-  }
-
-  @media (max-width: 540px) { .def-compare { grid-template-columns: 1fr; } }
-
-  .def-card {
-    padding: 24px;
-    border-radius: 12px;
-    border: 1px solid;
-  }
-
-  .def-a { background: rgba(244,162,97,0.07); border-color: rgba(244,162,97,0.3); }
-  .def-b { background: rgba(42,157,143,0.07); border-color: rgba(42,157,143,0.3); }
-
-  .def-title {
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    font-weight: 700;
-  }
-
-  .def-a .def-title { color: var(--accent-gold); }
-  .def-b .def-title { color: var(--accent-green); }
-
-  .def-pct {
-    font-family: 'Noto Serif KR', serif;
-    font-size: 40px;
-    font-weight: 900;
-    line-height: 1;
-    margin-bottom: 8px;
-  }
-
-  .def-a .def-pct { color: var(--accent-gold); }
-  .def-b .def-pct { color: var(--accent-green); }
-
-  .def-desc { font-size: 13px; color: var(--text-muted); line-height: 1.5; }
-
-  /* ─── CONCLUSION ─── */
-  .conclusion {
-    background:
-      radial-gradient(ellipse 60% 80% at 50% 100%, rgba(230,57,70,0.1) 0%, transparent 60%),
-      var(--surface);
-    border-radius: 16px;
-    padding: 48px 32px;
-    text-align: center;
-    border: 1px solid var(--border);
-    margin-top: 40px;
-  }
-
-  .conclusion p {
-    font-size: clamp(14px, 2vw, 16px);
-    color: var(--text-muted);
-    max-width: 600px;
-    margin: 0 auto 16px;
-    line-height: 1.8;
-  }
-
-  .source-note {
-    font-size: 11px;
-    color: #555;
-    text-align: center;
-    padding: 40px 24px;
-  }
-
-  /* ─── ANIMATIONS ─── */
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(16px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  @keyframes bounce {
-    0%, 100% { transform: translateX(-50%) translateY(0); }
-    50% { transform: translateX(-50%) translateY(8px); }
-  }
-
-  .fade-in {
-    opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-  }
-
-  .fade-in.visible {
-    opacity: 1;
-    transform: none;
-  }
-
-  /* ─── MISC ─── */
-  .pill {
-    display: inline-block;
-    padding: 3px 10px;
-    border-radius: 99px;
-    font-size: 12px;
-    font-weight: 500;
-  }
-
-  hr.divider {
-    border: none;
-    border-top: 1px solid var(--border);
-    margin: 32px 0;
-  }
-
-  .arrow { color: var(--accent-red); font-size: 20px; margin: 0 8px; }
-
-  blockquote {
-    border-left: 3px solid var(--border);
-    padding-left: 16px;
-    margin: 16px 0;
-    font-style: italic;
-    color: var(--text-muted);
-    font-size: 14px;
-    line-height: 1.7;
-  }
-
-
-  /* ─── EXTRA LAYOUT ─── */
-  .warning-strip {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 12px;
-    width: min(900px, calc(100% - 48px));
-    margin-top: 36px;
-    animation: fadeIn 0.6s 0.3s ease both;
-  }
-  .warning-chip {
-    background: rgba(230,57,70,0.12);
-    border: 1px solid rgba(230,57,70,0.35);
-    border-radius: 12px;
-    padding: 16px;
-    text-align: left;
-  }
-  .warning-chip b { display:block; color:var(--accent-red); font-size:22px; font-family:'Noto Serif KR', serif; line-height:1; margin-bottom:6px; }
-  .warning-chip span { font-size:12px; color:var(--text-muted); }
-  .timeline {
-    display: grid;
-    gap: 16px;
-    position: relative;
-  }
-  .timeline-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-left: 4px solid var(--accent-gold);
-    border-radius: 12px;
-    padding: 24px;
-  }
-  .timeline-card.red { border-left-color: var(--accent-red); }
-  .timeline-card.blue { border-left-color: var(--accent-blue); }
-  .date-tag { font-size: 12px; color: var(--accent-gold); font-weight: 700; letter-spacing: 1px; margin-bottom: 8px; }
-  .timeline-card.red .date-tag { color: var(--accent-red); }
-  .timeline-card.blue .date-tag { color: #74b3ce; }
-  .callout {
-    background: rgba(230,57,70,0.08);
-    border: 1px solid rgba(230,57,70,0.35);
-    border-radius: 14px;
-    padding: 24px;
-    margin-top: 24px;
-    line-height: 1.8;
-  }
-  .grade-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-    gap: 14px;
-  }
-  .grade-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 22px;
-  }
-  .grade-card .x { font-size: 34px; line-height: 1; color: var(--accent-red); margin-bottom: 10px; }
-  .grade-card .ok { font-size: 34px; line-height: 1; color: var(--accent-green); margin-bottom: 10px; }
-  .grade-title { font-weight: 700; margin-bottom: 8px; }
-  .grade-desc { color: var(--text-muted); font-size: 13px; line-height: 1.6; }
-  .compare-table {
-    width: 100%;
-    border-collapse: collapse;
-    overflow: hidden;
-    border-radius: 12px;
-    background: var(--surface);
-    border: 1px solid var(--border);
-  }
-  .compare-table th, .compare-table td {
-    padding: 15px 14px;
-    border-bottom: 1px solid var(--border);
-    font-size: 14px;
-    text-align: left;
-  }
-  .compare-table th { color: var(--accent-gold); background: var(--surface2); font-size: 12px; letter-spacing: 1px; }
-  .compare-table tr:last-child td { border-bottom: 0; }
-  .bad { color: var(--accent-red); font-weight: 800; }
-  .good { color: var(--accent-green); font-weight: 800; }
-  .quote-small {
-    color: var(--text-muted);
-    font-size: 13px;
-    line-height: 1.8;
-    margin-top: 10px;
-  }
-  .mini-note { font-size:12px; color:#666; line-height:1.7; margin-top:14px; }
-
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:'Noto Sans KR',sans-serif;line-height:1.65;word-break:keep-all;overflow-x:hidden}
+  a{color:inherit}
+  .noise{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+  .hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:56px 22px;position:relative;overflow:hidden;background:radial-gradient(ellipse 70% 55% at 50% 0%,rgba(239,35,60,.24),transparent 63%),linear-gradient(180deg,#101010 0%,#080808 100%)}
+  .hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(to bottom,black,transparent 85%)}
+  .hero-inner{position:relative;z-index:1;max-width:980px;margin:0 auto}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 16px;border:1px solid rgba(239,35,60,.65);border-radius:999px;color:#ff5968;font-size:12px;font-weight:900;letter-spacing:2.6px;text-transform:uppercase;background:rgba(239,35,60,.08);margin-bottom:28px}
+  h1{font-family:'Noto Serif KR',serif;font-size:clamp(34px,7vw,76px);font-weight:900;line-height:1.14;letter-spacing:-.05em;margin-bottom:20px}
+  h1 em{font-style:normal;color:var(--red);text-shadow:0 0 28px rgba(239,35,60,.28)}
+  .hero-sub{font-size:clamp(15px,2.1vw,21px);color:#c8c8c8;max-width:760px;margin:0 auto 32px;line-height:1.75}
+  .hero-sub strong{color:var(--white)}
+  .hero-punch{display:inline-grid;grid-template-columns:repeat(3,1fr);gap:10px;width:min(720px,100%);margin-top:18px}
+  .hero-punch span{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:14px 12px;font-weight:900;color:#fff;font-size:clamp(13px,2vw,16px)}
+  .hero-punch b{color:var(--red)}
+  .scroll{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);color:var(--dim);font-size:11px;letter-spacing:3px;animation:bounce 2s infinite;z-index:2}
+  section{position:relative;z-index:1;max-width:980px;margin:0 auto;padding:82px 22px;border-bottom:1px solid var(--border)}
+  .label{font-size:11px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;font-weight:900;margin-bottom:12px}
+  h2{font-family:'Noto Serif KR',serif;font-size:clamp(26px,4.7vw,44px);font-weight:900;line-height:1.25;letter-spacing:-.045em;margin-bottom:30px}
+  .hl{color:var(--red)}.gold{color:var(--gold)}.green{color:var(--green)}.blue{color:#74b3ce}
+  .lead{font-size:17px;color:#ccc;line-height:1.9;margin-bottom:24px}.lead strong{color:#fff}
+  .card{background:linear-gradient(180deg,var(--surface),#141414);border:1px solid var(--border);border-radius:18px;padding:28px;margin-bottom:18px;box-shadow:0 20px 60px rgba(0,0,0,.22)}
+  .card.red{border-color:rgba(239,35,60,.38);background:linear-gradient(180deg,rgba(239,35,60,.09),rgba(20,20,20,.95))}.card.gold{border-color:rgba(244,162,97,.35);background:linear-gradient(180deg,rgba(244,162,97,.08),rgba(20,20,20,.95))}.card.green{border-color:rgba(42,157,143,.35);background:linear-gradient(180deg,rgba(42,157,143,.08),rgba(20,20,20,.95))}.card.blue{border-color:rgba(69,123,157,.4);background:linear-gradient(180deg,rgba(69,123,157,.09),rgba(20,20,20,.95))}
+  .tag{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:6px 12px;font-size:12px;font-weight:900;letter-spacing:.4px;margin-bottom:14px}.tag.red{background:rgba(239,35,60,.13);border:1px solid rgba(239,35,60,.35);color:#ff6b78}.tag.gold{background:rgba(244,162,97,.13);border:1px solid rgba(244,162,97,.35);color:var(--gold)}.tag.blue{background:rgba(69,123,157,.15);border:1px solid rgba(69,123,157,.4);color:#8ecae6}.tag.green{background:rgba(42,157,143,.13);border:1px solid rgba(42,157,143,.35);color:#58d1c5}
+  .quote{font-size:clamp(17px,2.6vw,23px);line-height:1.75;font-weight:500}.quote strong.big{display:block;font-family:'Noto Serif KR',serif;font-size:clamp(34px,7vw,70px);font-weight:900;line-height:1.1;margin:8px 0;color:var(--red)}
+  .timeline{display:grid;gap:14px;margin-top:22px}.titem{display:grid;grid-template-columns:112px 1fr;gap:18px;align-items:start;background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:18px}.tdate{font-size:13px;font-weight:900;color:var(--gold);letter-spacing:.5px}.tbody{font-size:16px;color:#ddd}.tbody strong{color:#fff;font-weight:900}.tbody .wrong{color:#ff6b78;font-weight:900}
+  .formula{display:grid;grid-template-columns:1fr auto 1fr;gap:18px;align-items:center;margin:26px 0}.num-box{border-radius:18px;border:1px solid var(--border);background:var(--surface);padding:28px;text-align:center}.num-box .n{font-family:'Noto Serif KR',serif;font-size:clamp(38px,8vw,78px);font-weight:900;line-height:1;color:var(--text)}.num-box .cap{color:var(--muted);font-size:13px;margin-top:10px}.num-box.red .n{color:var(--red)}.num-box.gold .n{color:var(--gold)}.num-box.green .n{color:var(--green)}.minus{font-size:42px;color:var(--red);font-weight:900}
+  .stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:26px 0}.stat{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:22px;text-align:center}.stat .n{font-family:'Noto Serif KR',serif;font-size:clamp(32px,6vw,58px);font-weight:900;line-height:1;margin-bottom:8px}.stat .s{font-size:13px;color:var(--muted);line-height:1.45}.n.red{color:var(--red)}.n.gold{color:var(--gold)}.n.green{color:var(--green)}.n.blue{color:#74b3ce}.n.dim{color:#777}
+  .bar-wrap{margin:20px 0}.bar-label{display:flex;justify-content:space-between;gap:14px;color:var(--muted);font-size:14px;margin-bottom:8px}.bar-label strong{color:#fff}.track{height:24px;background:var(--surface2);border-radius:999px;overflow:hidden}.fill{height:100%;border-radius:999px;width:var(--w);background:linear-gradient(90deg,var(--red2),var(--red));transition:width 1.2s ease}.fill.gold{background:linear-gradient(90deg,#c86b31,var(--gold))}.fill.green{background:linear-gradient(90deg,#0f766e,var(--green))}.fill.blue{background:linear-gradient(90deg,#1d3557,var(--blue))}
+  .pill-row{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}.pill{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--border);background:var(--surface);border-radius:999px;padding:8px 12px;color:#ddd;font-size:13px;font-weight:700}.pill.red{border-color:rgba(239,35,60,.35);color:#ff6b78;background:rgba(239,35,60,.08)}.pill.gold{border-color:rgba(244,162,97,.35);color:var(--gold);background:rgba(244,162,97,.08)}
+  .compare{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:26px 0}.compare .side{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px}.side h3{font-size:14px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}.side .pct{font-family:'Noto Serif KR',serif;font-size:clamp(42px,8vw,78px);font-weight:900;line-height:1;margin-bottom:12px}.side p{color:#cfcfcf;font-size:15px;line-height:1.75}.side.bad{border-color:rgba(239,35,60,.4)}.side.bad .pct{color:var(--red)}.side.good{border-color:rgba(42,157,143,.4)}.side.good .pct{color:var(--green)}
+  .sa-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:24px 0}.sa{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px;text-align:center}.sa .x{font-size:34px;color:var(--red);font-weight:900;line-height:1}.sa p{font-size:13px;color:#cfcfcf;margin-top:8px}
+  .table{width:100%;border-collapse:separate;border-spacing:0;margin:22px 0;overflow:hidden;border:1px solid var(--border);border-radius:16px}.table th,.table td{padding:15px 14px;text-align:left;border-bottom:1px solid var(--border);font-size:14px}.table th{background:#202020;color:#fff;font-weight:900}.table td{background:#161616;color:#d8d8d8}.table tr:last-child td{border-bottom:none}.table .bad{color:#ff6b78;font-weight:900}.table .ok{color:#72e6da;font-weight:900}
+  .callout{border-radius:18px;border:1px solid rgba(239,35,60,.42);background:linear-gradient(180deg,rgba(239,35,60,.1),rgba(23,23,23,.95));padding:28px;margin:28px 0}.callout h3{font-family:'Noto Serif KR',serif;font-size:clamp(22px,3.2vw,32px);line-height:1.3;margin-bottom:12px}.callout p{color:#ddd;font-size:16px;line-height:1.85}.callout strong{color:#fff}
+  .mini{font-size:12px;color:#777;line-height:1.7;margin-top:12px}.source{font-size:12px;color:#747474;line-height:1.8}.conclusion{border:1px solid rgba(239,35,60,.45);background:radial-gradient(ellipse 70% 90% at 50% 100%,rgba(239,35,60,.14),transparent 60%),var(--surface);border-radius:24px;text-align:center;padding:48px 30px}.conclusion h2{margin-bottom:18px}.conclusion p{font-size:clamp(17px,2.4vw,22px);color:#ddd;line-height:1.9;max-width:780px;margin:0 auto}.conclusion strong{color:#fff}.footer{max-width:980px;margin:0 auto;padding:34px 22px 60px;color:#696969;font-size:12px;line-height:1.8;text-align:center}
+  @keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
+  .fade{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}.fade.visible{opacity:1;transform:none}
+  @media(max-width:760px){.hero-punch{grid-template-columns:1fr}.timeline .titem{grid-template-columns:1fr}.formula{grid-template-columns:1fr}.minus{display:none}.stat-grid{grid-template-columns:repeat(2,1fr)}.compare{grid-template-columns:1fr}.sa-grid{grid-template-columns:repeat(2,1fr)}section{padding:64px 18px}.card{padding:22px}.table th,.table td{padding:12px 10px;font-size:13px}}
 </style>
 </head>
 <body>
+<div class="noise"></div>
 
-<!-- HERO -->
-<div class="hero">
-  <div class="hero-tag">팩트체크 · 강원도지사 공약</div>
-  <h1><em>93.7%</em> 자랑 뒤에 숨은<br>강원도의 초라한 성적표</h1>
-  <p class="hero-sub">김진태 후보는 공약 이행률을 자랑했습니다.<br>하지만 전국 평가표를 펼쳐보면, 강원도는 SA 등급 명단 어디에도 없습니다.</p>
-  <div class="warning-strip">
-    <div class="warning-chip"><b>SA 0개</b><span>종합·분야별 시도지사 SA 명단에 강원 없음</span></div>
-    <div class="warning-chip"><b>25.94%</b><span>공약 재정확보율, 전국 평균보다 낮음</span></div>
-    <div class="warning-chip"><b>12개</b><span>127개 공약 중 완전 완료는 12개뿐</span></div>
-  </div>
-  <div class="hero-scroll">↓ 스크롤</div>
-</div>
-
-<!-- SECTION 1: 핵심 메시지 -->
-<section class="fade-in">
-  <div class="section-label">핵심 결론</div>
-  <h2>문제는 <span class="hl-gold">93.7%</span>라는 숫자 하나가 아니라,<br>그 숫자로 <span class="hl">실패한 성적표</span>를 가렸다는 점입니다.</h2>
-
-  <div class="debate-box red">
-    <div class="speaker-tag tag-fact">📌 팩트체크 결론</div>
-    <div class="debate-quote">
-      강원도지사 공약평가,<br>
-      <strong class="red">SA 등급 없음</strong>
-      재정확보율도 25.94%, 집행률도 21.26%.<br>
-      전국 평균에도 못 미치는 성적표입니다.
-    </div>
-    <div class="fact-check-badge">⚠️ “높은 이행률”보다 중요한 건 실제 성과와 예산입니다</div>
-  </div>
-
-  <div class="callout">
-    <b style="color:var(--text);">핵심요약</b><br>
-    “김진태 지사의 착수·진행 중인 공약까지 넓게 잡은 숫자를 앞세워도, 강원도는 전국 광역단체 평가에서 종합 SA도, 공약이행완료 SA도, 목표달성 SA도, 주민소통 SA도 받지 못했습니다. 도민에게 필요한 질문은 하나입니다. <b style="color:var(--accent-red);">자랑할 성과가 있었다면 왜 SA 등급은 하나도 없었나?</b>
-  </div>
-</section>
-
-<!-- SECTION 2: 토론회 말바꾸기/혼선 -->
-<section class="fade-in">
-  <div class="section-label">토론회 발언 흐름</div>
-  <h2>공약은 <span class="hl-gold">200개</span>라더니,<br>사업은 <span class="hl">120개</span>라며 자랑했습니다.</h2>
-
-  <div class="timeline">
-    <div class="timeline-card">
-      <div class="date-tag">5월 11일 첫 토론회</div>
-      <div class="debate-quote" style="font-size:16px;">
-        “당시 제 공약이 한 <b style="color:var(--accent-gold);">200개 정도</b> 됩니다. 그중 여덟 개, 4%를 내려놓은 겁니다. … 그 결과 공약 이행률이 <b style="color:var(--accent-gold);">93.7%</b>입니다.”
-      </div>
-      <div class="quote-small">핵심: 공약 개수와 이행률을 앞세워 도정 성과를 설명.</div>
-    </div>
-
-    <div class="timeline-card blue">
-      <div class="date-tag">5월 14일 다음 토론회</div>
-      <div class="debate-quote" style="font-size:16px;">
-        “미래 산업에서 지금 총 <b style="color:#74b3ce;">120개 사업</b>, <b style="color:#74b3ce;">4조 원치</b>가 진행되고 있습니다. 제 재직 기간 동안 거의 <b style="color:#74b3ce;">열흘에 하나씩</b> 새로운 것을 만들어 내고 있습니다.”
-      </div>
-      <div class="quote-small">핵심: 이번에는 ‘120개 사업·4조 원·열흘에 하나’라는 식으로 사업 개수와 규모를 강조.</div>
-    </div>
-
-    <div class="timeline-card red">
-      <div class="date-tag">최종 쟁점</div>
-      <div class="debate-quote" style="font-size:16px;">
-        공약 수, 사업 수, 이행률, 완료율이 뒤섞였습니다.<br>
-        그런데도 토론회에서는 “사실이 아니면 사퇴하겠다”는 취지의 강한 발언까지 나왔습니다.
-      </div>
-      <div class="quote-small">숫자를 정확히 구분하지 못한 사람이, 숫자로 도민을 설득하려 했다는 점이 핵심입니다.</div>
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">FACT CHECK · GANGWON PROMISES</div>
+    <h1>김진태,<br>자기 공약도 모르는<br><em>‘공알못’ 도지사?</em></h1>
+    <p class="hero-sub">
+      공약이 <strong>200개</strong>라더니, 다음엔 <strong>165개</strong>라더니,<br>
+      매니페스토 기준 실제 공약은 <strong>127개</strong>였습니다.
+    </p>
+    <div class="hero-punch">
+      <span>93.7% 주장</span>
+      <span>실제 완료·이행 <b>66.93%</b></span>
+      <span>완전 완료 <b>12건</b></span>
     </div>
   </div>
+  <div class="scroll">↓ SCROLL</div>
+</header>
 
-  <div class="callout">
-    <b style="color:var(--accent-red);">한 줄 정리</b><br>
-    공약이 몇 개인지도, 완료와 진행의 차이도, 공약과 사업의 범위도 명확히 설명하지 못했습니다. 이것은 단순 말실수가 아니라 <b style="color:var(--text);">도정 관리 능력의 문제</b>입니다.
-  </div>
-</section>
-
-<!-- SECTION 3: SA 등급 비교 -->
-<section class="fade-in">
-  <div class="section-label">전국 광역단체 비교</div>
-  <h2>전국은 SA를 받았는데,<br>강원도는 <span class="hl">어디에도 없습니다.</span></h2>
-
-  <div class="grade-grid">
-    <div class="grade-card">
-      <div class="x">✕</div>
-      <div class="grade-title">종합평가 SA</div>
-      <div class="grade-desc">서울·부산·광주·경기·충남·전남·경북·경남·제주 9곳. 강원 없음.</div>
-    </div>
-    <div class="grade-card">
-      <div class="x">✕</div>
-      <div class="grade-title">공약이행완료 분야 SA</div>
-      <div class="grade-desc">서울·광주·울산·경기·충남·전남·경북·경남·제주 9곳. 강원 없음.</div>
-    </div>
-    <div class="grade-card">
-      <div class="x">✕</div>
-      <div class="grade-title">2025년 목표달성 SA</div>
-      <div class="grade-desc">세종·경기·전남·경남·제주 5곳. 강원 없음.</div>
-    </div>
-    <div class="grade-card">
-      <div class="x">✕</div>
-      <div class="grade-title">주민소통 분야 SA</div>
-      <div class="grade-desc">부산·전북·경북·제주 4곳. 강원 없음.</div>
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 4: 숫자 해부 -->
-<section class="fade-in">
-  <div class="section-label">숫자 해부</div>
-  <h2><span class="hl-gold">93.7%</span>를 말할 수는 있어도,<br>그게 <span class="hl">잘했다는 증거</span>는 아닙니다.</h2>
-
-  <div class="def-compare">
-    <div class="def-card def-a">
-      <div class="def-title">김진태 후보가 앞세운 숫자</div>
-      <div class="def-pct">93.7%</div>
-      <div class="def-desc">
-        착수·정상추진까지 폭넓게 포함한 이행률 주장.<br>
-        “시작했다”, “진행 중이다”까지 성과처럼 보이게 만드는 숫자입니다.
-      </div>
-    </div>
-    <div class="def-card def-b">
-      <div class="def-title">매니페스토 완료·이행 기준</div>
-      <div class="def-pct">66.93%</div>
-      <div class="def-desc">
-        127개 중 완료 12개 + 이행후 계속추진 73개 = 85개.<br>
-        도민이 체감할 실제 성과에 더 가까운 숫자입니다.
-      </div>
-    </div>
-  </div>
-
-  <div style="background:var(--surface2); border-radius:10px; padding:20px 24px; font-size:14px; line-height:1.8; color:var(--text-muted);">
-    <b style="color:var(--text);">🔑 쉽게 말하면:</b><br>
-    “다이어트 시작했어”라고 말하면 이행이고,<br>
-    “목표 체중에 도달했어”가 완료입니다.<br>
-    그런데 김진태 후보는 <b style="color:var(--accent-gold);">시작했다는 숫자</b>를 앞세워,
-    <b style="color:var(--accent-red);">실제로 얼마나 해냈는지</b>를 흐렸습니다.
-  </div>
-</section>
-
-<!-- SECTION 5: 127개 공약 현황 -->
-<section class="fade-in">
-  <div class="section-label">공약 127개 전체 현황</div>
-  <h2>127개 공약 중,<br>완전히 끝난 건 <span class="hl">12개뿐</span>입니다.</h2>
-
+<section class="fade">
+  <div class="label">핵심 결론</div>
+  <h2>문제는 단순한 숫자 차이가 아닙니다.<br><span class="hl">숫자를 몰랐거나, 알면서 부풀렸거나.</span></h2>
+  <p class="lead">
+    김진태 후보는 토론회에서 자신의 공약 이행률이 <strong>93.7%</strong>라고 했습니다.
+    그러나 한국매니페스토실천본부 기준 강원특별자치도의 완료·이행 공약률은
+    <strong>66.93%</strong>입니다. 완전히 완료된 공약만 보면 <strong>127개 중 12개, 9.4%</strong>에 그칩니다.
+  </p>
   <div class="stat-grid">
-    <div class="stat-card">
-      <div class="stat-number num-green">12</div>
-      <div class="stat-label">✅ 완료<br>9.4%</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-number num-gold">73</div>
-      <div class="stat-label">🔄 이행 후<br>계속추진</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-number num-blue">34</div>
-      <div class="stat-label">🔵 정상추진<br>진행 중</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-number num-red">4</div>
-      <div class="stat-label">⚠️ 일부추진</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-number" style="color:#888;">3</div>
-      <div class="stat-label">❌ 폐기</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-number" style="color:#666;">1</div>
-      <div class="stat-label">📋 기타</div>
-    </div>
+    <div class="stat"><div class="n red">93.7%</div><div class="s">김진태 후보 주장<br>정상추진 포함 추정치</div></div>
+    <div class="stat"><div class="n gold">66.93%</div><div class="s">매니페스토 기준<br>완료·이행 공약률</div></div>
+    <div class="stat"><div class="n green">12</div><div class="s">완료 공약<br>127개 중 12개</div></div>
+    <div class="stat"><div class="n red">0</div><div class="s">도지사 평가<br>SA 등급 개수</div></div>
   </div>
-
-  <div class="bar-wrapper">
-    <div class="bar-label"><span>완전히 <strong>완료된</strong> 공약</span><span style="color:var(--accent-green);font-weight:700;">12개 / 127개</span></div>
-    <div class="bar-track"><div class="bar-fill bar-fill-green" style="--w:9.4%;"></div></div>
-  </div>
-  <div class="bar-wrapper">
-    <div class="bar-label"><span>완료 + 이행후계속추진</span><span style="color:var(--accent-gold);font-weight:700;">85개 / 127개 = 66.93%</span></div>
-    <div class="bar-track"><div class="bar-fill bar-fill-gold" style="--w:66.93%;"></div></div>
-  </div>
-  <div class="bar-wrapper">
-    <div class="bar-label"><span>김진태 후보가 말한 이행률</span><span style="color:var(--accent-red);font-weight:700;">93.7%</span></div>
-    <div class="bar-track"><div class="bar-fill bar-fill-red" style="--w:93.7%;"></div></div>
+  <div class="callout">
+    <h3>한 줄 요약</h3>
+    <p><strong>자기 공약 숫자도 오락가락, 이행 기준도 오락가락.</strong><br>도지사 4년의 성과라며 내세운 숫자부터 제대로 설명하지 못했습니다.</p>
   </div>
 </section>
 
-<!-- SECTION 6: 재정 현황 -->
-<section class="fade-in">
-  <div class="section-label">돈 없는 공약</div>
-  <h2>공약은 크게 말했지만,<br>예산 확보는 <span class="hl">전국 평균 아래</span>입니다.</h2>
+<section class="fade">
+  <div class="label">토론회에서 드러난 공약 숫자 혼선</div>
+  <h2>공약이 <span class="gold">200개</span>입니까,<br><span class="gold">165개</span>입니까,<br>아니면 <span class="hl">127개</span>입니까?</h2>
+  <div class="timeline">
+    <div class="titem">
+      <div class="tdate">5월 11일<br>첫 토론회</div>
+      <div class="tbody">김진태 후보는 “당시 제 공약이 <strong>한 200개 정도</strong> 됩니다. 그중 여덟 개, 4%를 내려놓은 겁니다”라고 설명했습니다.</div>
+    </div>
+    <div class="titem">
+      <div class="tdate">5월 14일<br>다음 토론회</div>
+      <div class="tbody">도정 성과를 설명하며 “미래산업에서 <strong>총 120개 사업, 4조 원 규모</strong>가 진행 중”이고, “<strong>열흘에 하나씩</strong> 새로운 것을 만들어냈다”고 강조했습니다.</div>
+    </div>
+    <div class="titem">
+      <div class="tdate">이후 공방</div>
+      <div class="tbody">공약 수를 <strong>165개</strong>라고 설명했다가, 실제 매니페스토 기준 <strong class="wrong">127개</strong>라는 지적에는 오히려 아니라고 맞섰습니다.</div>
+    </div>
+  </div>
+  <div class="card red" style="margin-top:24px;">
+    <div class="tag red">핵심 문제</div>
+    <div class="quote">도지사를 4년 했는데,<br><strong>자기 공약이 몇 개인지도 정확히 설명하지 못했습니다.</strong></div>
+  </div>
+</section>
 
-  <table class="compare-table">
+<section class="fade">
+  <div class="label">93.7%의 착시</div>
+  <h2>김진태의 <span class="hl">93.7%</span>,<br>무엇을 끌어넣은 숫자인가?</h2>
+  <div class="compare">
+    <div class="side bad">
+      <h3>김진태 후보 주장</h3>
+      <div class="pct">93.7%</div>
+      <p>완료·이행 공약에 아직 완료·이행으로 분류되지 않은 <strong>정상추진</strong>까지 포함한 수치로 보입니다. 쉽게 말해 “진행 중”까지 이행률처럼 말한 셈입니다.</p>
+    </div>
+    <div class="side good">
+      <h3>매니페스토 기준</h3>
+      <div class="pct">66.93%</div>
+      <p>강원도 공약 127개 중 <strong>완료 12개</strong>와 <strong>이행 후 계속추진 73개</strong>, 총 85개를 완료·이행 공약으로 분류한 수치입니다.</p>
+    </div>
+  </div>
+  <div class="formula">
+    <div class="num-box red"><div class="n">93.7%</div><div class="cap">정상추진까지 포함한 주장</div></div>
+    <div class="minus">−</div>
+    <div class="num-box green"><div class="n">66.93%</div><div class="cap">매니페스토 완료·이행 기준</div></div>
+  </div>
+  <div class="card red">
+    <div class="tag red">26.77%p 차이</div>
+    <div class="quote">정상추진까지 끌어넣어<br><strong class="big">26.77%p</strong>부풀려 보이게 만든 숫자입니다.</div>
+  </div>
+  <p class="mini">※ ‘완료·이행’에는 완료와 이행 후 계속추진이 포함됩니다. ‘정상추진’은 완료·이행에는 포함되지 않지만, 김진태 후보가 말한 93.7%에는 포함된 것으로 계산됩니다.</p>
+</section>
+
+<section class="fade">
+  <div class="label">127개 공약의 실제 상태</div>
+  <h2>4년 동안 완전히 끝낸 공약,<br><span class="hl">12개뿐</span>입니다.</h2>
+  <div class="stat-grid">
+    <div class="stat"><div class="n green">12</div><div class="s">완료<br>9.4%</div></div>
+    <div class="stat"><div class="n gold">73</div><div class="s">이행 후<br>계속추진</div></div>
+    <div class="stat"><div class="n blue">34</div><div class="s">정상추진<br>진행 중</div></div>
+    <div class="stat"><div class="n red">4</div><div class="s">일부추진<br>미흡</div></div>
+    <div class="stat"><div class="n dim">3</div><div class="s">폐기<br>없던 일</div></div>
+    <div class="stat"><div class="n dim">1</div><div class="s">기타<br>분류</div></div>
+    <div class="stat"><div class="n red">127</div><div class="s">전체 공약<br>매니페스토 기준</div></div>
+    <div class="stat"><div class="n gold">85</div><div class="s">완료·이행<br>공약 수</div></div>
+  </div>
+
+  <div class="bar-wrap">
+    <div class="bar-label"><span>완전히 완료된 공약</span><strong>12개 / 127개, 9.4%</strong></div>
+    <div class="track"><div class="fill green" style="--w:9.4%"></div></div>
+  </div>
+  <div class="bar-wrap">
+    <div class="bar-label"><span>완료 + 이행 후 계속추진</span><strong>85개 / 127개, 66.93%</strong></div>
+    <div class="track"><div class="fill gold" style="--w:66.93%"></div></div>
+  </div>
+  <div class="bar-wrap">
+    <div class="bar-label"><span>정상추진까지 포함한 주장</span><strong>119개 / 127개, 93.7%</strong></div>
+    <div class="track"><div class="fill blue" style="--w:93.7%"></div></div>
+  </div>
+
+  <div class="callout">
+    <h3>“다이어트 시작했어”와 “목표 체중 달성했어”는 다릅니다.</h3>
+    <p>정상추진은 아직 진행 중이라는 뜻입니다. 진행 중인 공약까지 완료된 것처럼 섞어 말하면, 도민은 실제 성과를 제대로 알 수 없습니다.</p>
+  </div>
+</section>
+
+<section class="fade">
+  <div class="label">SA 등급 0개</div>
+  <h2>전국적으로 높은 편?<br>공식 평가는 <span class="hl">최고등급 0개</span>였습니다.</h2>
+  <p class="lead">
+    2026년 한국매니페스토실천본부 시·도지사 평가에서 강원특별자치도는
+    종합평가, 공약이행완료, 2025년 목표달성, 주민소통 분야 어느 곳에서도 SA 명단에 들지 못했습니다.
+  </p>
+  <div class="sa-grid">
+    <div class="sa"><div class="x">0</div><p>종합평가<br>SA 없음</p></div>
+    <div class="sa"><div class="x">0</div><p>공약이행완료<br>SA 없음</p></div>
+    <div class="sa"><div class="x">0</div><p>2025 목표달성<br>SA 없음</p></div>
+    <div class="sa"><div class="x">0</div><p>주민소통<br>SA 없음</p></div>
+  </div>
+  <div class="card gold">
+    <div class="tag gold">비교 포인트</div>
+    <div class="quote">도지사 평가 기준 주요 SA 명단에<br><strong>강원은 한 번도 등장하지 않았습니다.</strong></div>
+  </div>
+  <p class="mini">※ 도지사 평가 기준입니다. 교육청 평가는 별도입니다.</p>
+</section>
+
+<section class="fade">
+  <div class="label">강원·충북·인천의 공통점</div>
+  <h2>SA를 단 한 개도 못 받은 지자체,<br><span class="hl">강원·충북·인천</span></h2>
+  <p class="lead">
+    종합평가와 3개 분야별 SA 명단을 대조하면, 평가 대상 시·도 중 강원·충북·인천은 도지사 평가에서 SA가 하나도 없습니다.
+  </p>
+  <table class="table">
     <thead>
-      <tr><th>구분</th><th>강원도</th><th>전국 평균</th><th>판정</th></tr>
+      <tr><th>지자체</th><th>완료·이행 공약률</th><th>재정확보율</th><th>재정집행률</th><th>SA 등급</th></tr>
     </thead>
     <tbody>
-      <tr><td>공약 재정확보율</td><td class="bad">25.94%</td><td>35.73%</td><td class="bad">평균 미달</td></tr>
-      <tr><td>공약 재정집행률</td><td class="bad">21.26%</td><td>24.21%</td><td class="bad">평균 미달</td></tr>
-      <tr><td>재정확보율 50% 이상</td><td class="bad">해당 없음</td><td>서울·울산·경기·제주</td><td class="bad">상위권 아님</td></tr>
-      <tr><td>재정집행률 30% 이상</td><td class="bad">해당 없음</td><td>울산·세종·경기·전북·전남·제주</td><td class="bad">상위권 아님</td></tr>
+      <tr><td><strong>강원</strong></td><td class="bad">66.93%</td><td>25.94%</td><td>21.26%</td><td class="bad">0개</td></tr>
+      <tr><td>충북</td><td>61.00%</td><td>22.29%</td><td>17.35%</td><td class="bad">0개</td></tr>
+      <tr><td>인천</td><td>50.56%</td><td>25.48%</td><td>18.91%</td><td class="bad">0개</td></tr>
     </tbody>
   </table>
+  <p class="mini">※ SA 명단 기준 대조. 대구·대전은 해당 시·도지사 평가 대상에서 제외되었습니다.</p>
+</section>
 
-  <div class="finance-bar-big" style="margin-top:24px;">
-    <div class="title">강원도 공약 계획 총계</div>
-    <div class="amount">54조 8,326억 원</div>
-    <div class="bar-wrapper" style="margin:0;">
-      <div class="bar-label"><span>확보된 예산</span><span style="color:var(--accent-red);font-weight:700;">25.94%</span></div>
-      <div class="bar-track"><div class="bar-fill bar-fill-red" style="--w:25.94%;"></div></div>
-    </div>
-    <p class="mini-note">총 소요재정 54,832,678백만 원 중 확보재정 14,222,487백만 원.</p>
+<section class="fade">
+  <div class="label">재정 성적표</div>
+  <h2>공약은 말로 하는 게 아니라<br><span class="hl">돈으로 증명</span>해야 합니다.</h2>
+  <div class="stat-grid">
+    <div class="stat"><div class="n red">25.94%</div><div class="s">강원 공약<br>재정확보율</div></div>
+    <div class="stat"><div class="n gold">35.73%</div><div class="s">전국 시·도지사<br>평균 재정확보율</div></div>
+    <div class="stat"><div class="n red">21.26%</div><div class="s">강원 공약<br>재정집행률</div></div>
+    <div class="stat"><div class="n gold">24.21%</div><div class="s">전국 시·도지사<br>평균 재정집행률</div></div>
   </div>
+  <div class="bar-wrap">
+    <div class="bar-label"><span>강원 재정확보율</span><strong>25.94%</strong></div>
+    <div class="track"><div class="fill red" style="--w:25.94%"></div></div>
+  </div>
+  <div class="bar-wrap">
+    <div class="bar-label"><span>전국 평균 재정확보율</span><strong>35.73%</strong></div>
+    <div class="track"><div class="fill gold" style="--w:35.73%"></div></div>
+  </div>
+  <div class="card red">
+    <div class="tag red">도정 성과의 본질</div>
+    <div class="quote">공약을 많이 말하는 것보다 중요한 건<br><strong>예산을 확보하고 실제로 끝내는 능력</strong>입니다.</div>
+  </div>
+</section>
 
+<section class="fade">
+  <div class="label">책임 발언</div>
+  <h2>“틀렸으면 책임지겠다”는 말,<br><span class="hl">이제 숫자로 답해야 합니다.</span></h2>
+  <div class="card red">
+    <div class="tag red">팩트 체크</div>
+    <div class="quote">
+      공약 수는 오락가락했고,<br>
+      완료율과 이행률은 섞였고,<br>
+      정상추진까지 포함해 93.7%라고 말했습니다.
+    </div>
+  </div>
+  <div class="pill-row">
+    <span class="pill red">공약 200개?</span>
+    <span class="pill red">공약 165개?</span>
+    <span class="pill gold">실제 127개</span>
+    <span class="pill red">93.7%?</span>
+    <span class="pill gold">매니페스토 66.93%</span>
+    <span class="pill red">완료 12건</span>
+    <span class="pill red">SA 0개</span>
+  </div>
   <div class="callout">
-    <b style="color:var(--accent-red);">핵심</b><br>
-    “4조 원 사업”, “열흘에 하나”라는 말보다 중요한 것은 실제 예산입니다. 계획만 있고 돈이 없으면 공약은 도민의 삶으로 오지 않습니다.
+    <h3>도지사라면 최소한 자기 성적표는 알아야 합니다.</h3>
+    <p>상대 후보를 면박 주기 전에, 자기 공약이 몇 개인지부터 정확히 알고 있어야 합니다. 4년 도정의 성과를 말하려면, 이행 기준과 완료 기준도 구분해서 설명해야 합니다.</p>
   </div>
 </section>
 
-<!-- SECTION 7: 폐기·부진 공약 -->
-<section class="fade-in">
-  <div class="section-label">폐기·부진 공약</div>
-  <h2>이미 사라졌거나,<br>제대로 못 가는 공약도 있습니다.</h2>
-
-  <ul class="zero-list">
-    <li class="zero-item"><span class="zero-name">탄소중립 신재생에너지 클러스터 조성</span><span class="zero-badge">폐기</span></li>
-    <li class="zero-item"><span class="zero-name">DMZ 세계평화공원 조성</span><span class="zero-badge">폐기</span></li>
-    <li class="zero-item"><span class="zero-name">한방산업특구 지정</span><span class="zero-badge">폐기</span></li>
-    <li class="zero-item"><span class="zero-name">전문체육 활성화 추진</span><span class="zero-badge">일부추진</span></li>
-    <li class="zero-item"><span class="zero-name">속초~고성 고속도로 건설</span><span class="zero-badge">일부추진</span></li>
-    <li class="zero-item"><span class="zero-name">홍천 산림집적단지 조성</span><span class="zero-badge">일부추진</span></li>
-    <li class="zero-item"><span class="zero-name">국립 강원권생물자원관 건립</span><span class="zero-badge">일부추진</span></li>
-    <li class="zero-item"><span class="zero-name">북양양IC~떡밭재 연결도로 개설</span><span class="zero-badge">기타</span></li>
-  </ul>
-</section>
-
-<!-- SECTION 8: 결론 -->
-<section class="fade-in">
-  <div class="section-label">결론</div>
-  <h2>숫자는 컸지만,<br>성적표는 <span class="hl">초라했습니다.</span></h2>
-
-  <div style="display:grid; gap:14px;">
-    <div style="background:var(--surface); border-radius:12px; padding:24px; border:1px solid rgba(230,57,70,0.3); display:flex; gap:16px; align-items:flex-start;">
-      <div style="font-size:24px; flex-shrink:0;">❌</div>
-      <div>
-        <div style="font-weight:700; margin-bottom:6px; color:var(--accent-red);">SA 등급 없음</div>
-        <div style="font-size:13px; color:var(--text-muted); line-height:1.7;">전국 광역단체 종합평가와 주요 분야별 SA 명단에서 강원도지사는 보이지 않습니다.</div>
-      </div>
-    </div>
-    <div style="background:var(--surface); border-radius:12px; padding:24px; border:1px solid rgba(230,57,70,0.3); display:flex; gap:16px; align-items:flex-start;">
-      <div style="font-size:24px; flex-shrink:0;">💸</div>
-      <div>
-        <div style="font-weight:700; margin-bottom:6px; color:var(--accent-red);">예산 확보도 평균 이하</div>
-        <div style="font-size:13px; color:var(--text-muted); line-height:1.7;">공약 재정확보율 25.94%, 집행률 21.26%. 전국 평균보다 낮습니다.</div>
-      </div>
-    </div>
-    <div style="background:var(--surface); border-radius:12px; padding:24px; border:1px solid rgba(230,57,70,0.3); display:flex; gap:16px; align-items:flex-start;">
-      <div style="font-size:24px; flex-shrink:0;">🔢</div>
-      <div>
-        <div style="font-weight:700; margin-bottom:6px; color:var(--accent-red);">공약·사업 개수 혼선</div>
-        <div style="font-size:13px; color:var(--text-muted); line-height:1.7;">200개 공약, 120개 사업, 93.7% 이행률, 66.93% 완료·이행률이 뒤섞였습니다. 도민에게 필요한 것은 숫자 자랑이 아니라 정확한 설명입니다.</div>
-      </div>
-    </div>
-  </div>
-
+<section class="fade" style="border-bottom:none;">
   <div class="conclusion">
-    <div style="font-size:32px; margin-bottom:16px;">🏔️</div>
-    <h3 style="font-family:'Noto Serif KR', serif; font-size:20px; margin-bottom:16px;">공약 이행률 93.7%보다 중요한 질문</h3>
-    <p>정말 일을 잘했다면 왜 강원도는 SA 등급을 하나도 받지 못했을까요?</p>
-    <p style="margin-top:0;">공약은 숫자놀이가 아닙니다. 도민과의 약속이고, 예산과 결과로 증명해야 할 성적표입니다.</p>
+    <div class="label">결론</div>
+    <h2>김진태 도정 4년,<br><span class="hl">자랑이 아니라 해명 대상</span>입니다.</h2>
+    <p>
+      김진태 후보는 공약 이행률 <strong>93.7%</strong>를 자랑했지만,
+      매니페스토 기준 완료·이행 공약률은 <strong>66.93%</strong>였습니다.
+      완전히 완료된 공약은 <strong>127개 중 12개</strong>뿐입니다.<br><br>
+      자기 공약 숫자도, 이행 기준도 제대로 설명하지 못한 도지사.
+      이것이 김진태 도정 4년의 민낯입니다.
+    </p>
   </div>
 </section>
 
-<div class="source-note">
-  출처: 한국매니페스토실천본부 「2026 전국 시도지사·교육감 공약이행 및 정보공개 평가 결과」(2026.4.1 발표, 2025년 12월 말 기준)<br>
-  강원특별자치도 공개자료 | 강원도지사 후보자 토론회 발언 정리
+<div class="footer">
+  <p>자료 기준: 한국매니페스토실천본부 「2026 전국 시도지사, 교육감 공약이행 및 정보공개 평가 결과」, 2025년 12월 말 기준 공약이행 자료.</p>
+  <p>※ 본 페이지의 수치 계산: 85/127=66.93%, 119/127=93.70%, 12/127=9.45%.</p>
 </div>
 
 <script>
-  // Intersection Observer for fade-in
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
         e.target.classList.add('visible');
-        e.target.querySelectorAll('.bar-fill').forEach(b => b.classList.add('animated'));
+        e.target.querySelectorAll('.fill').forEach(el=>{
+          const w = el.style.getPropertyValue('--w');
+          el.style.width = w || '0%';
+        });
       }
-    });
-  }, { threshold: 0.1 });
+    })
+  }, {threshold:.12});
 
-  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  document.querySelectorAll('.fade').forEach(el=>io.observe(el));
+  document.querySelectorAll('.fill').forEach(el=>{ el.style.width='0%'; });
 </script>
 </body>
 </html>
