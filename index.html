@@ -3,31 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>김진태 강원도지사 공약 이행률 팩트체크</title>
-
-<!-- Open Graph / Facebook / KakaoTalk -->
+<title>김진태 공약 이행률 팩트체크 | 93.7% 뒤의 강원도 성적표</title>
+<meta name="description" content="공약 이행률 93.7% 주장 뒤에 숨은 강원도의 SA 미달, 재정확보 부진, 공약 개수 혼선을 팩트체크합니다.">
+<meta property="og:title" content="93.7% 자랑 뒤에 숨은 강원도의 초라한 성적표">
+<meta property="og:description" content="SA 등급 0개, 재정확보율 25.94%, 집행률 21.26%, 완료 공약 12개. 숫자로 확인한 김진태 도정 공약 팩트체크.">
 <meta property="og:type" content="website">
-<meta property="og:locale" content="ko_KR">
-<meta property="og:site_name" content="공약 이행률 팩트체크">
-<meta property="og:title" content="김진태 강원도지사 공약 이행률 팩트체크">
-<meta property="og:description" content="“다이어트 시작했어 vs 다이어트 성공했어 / 김진태의 말속임 전격해부!">
-<meta property="og:url" content="https://kayric5823-coder.github.io/jtfactcheck/">
-<meta property="og:image" content="https://kayric5823-coder.github.io/jtfactcheck/jtfact_og_image.png">
-<meta property="og:image:secure_url" content="https://kayric5823-coder.github.io/jtfactcheck/jtfact_og_image.png">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="공약 이행률 93.7%, 시작만 해도 이행인가?">
-
-<!-- Twitter / X -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="김진태 강원도지사 공약 이행률 팩트체크">
-<meta name="twitter:description" content="““다이어트 시작했어 vs 다이어트 성공했어 / 김진태의 말속임 전격해부!">
-<meta name="twitter:image" content="https://kayric5823-coder.github.io/jtfactcheck/jtfact_og_image.png">
-
-<!-- Search / Browser -->
-<meta name="description" content="“공약 이행률 93.7%”는 착수·진행 중 공약까지 포함한 수치입니다. 완료·이행 기준 66.93%와 무엇이 다른지 확인했습니다.">
-<link rel="canonical" href="https://kayric5823-coder.github.io/jtfactcheck/">
+<meta property="og:image" content="jtfact_og.png">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -520,6 +501,92 @@
     font-size: 14px;
     line-height: 1.7;
   }
+
+
+  /* ─── EXTRA LAYOUT ─── */
+  .warning-strip {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    width: min(900px, calc(100% - 48px));
+    margin-top: 36px;
+    animation: fadeIn 0.6s 0.3s ease both;
+  }
+  .warning-chip {
+    background: rgba(230,57,70,0.12);
+    border: 1px solid rgba(230,57,70,0.35);
+    border-radius: 12px;
+    padding: 16px;
+    text-align: left;
+  }
+  .warning-chip b { display:block; color:var(--accent-red); font-size:22px; font-family:'Noto Serif KR', serif; line-height:1; margin-bottom:6px; }
+  .warning-chip span { font-size:12px; color:var(--text-muted); }
+  .timeline {
+    display: grid;
+    gap: 16px;
+    position: relative;
+  }
+  .timeline-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent-gold);
+    border-radius: 12px;
+    padding: 24px;
+  }
+  .timeline-card.red { border-left-color: var(--accent-red); }
+  .timeline-card.blue { border-left-color: var(--accent-blue); }
+  .date-tag { font-size: 12px; color: var(--accent-gold); font-weight: 700; letter-spacing: 1px; margin-bottom: 8px; }
+  .timeline-card.red .date-tag { color: var(--accent-red); }
+  .timeline-card.blue .date-tag { color: #74b3ce; }
+  .callout {
+    background: rgba(230,57,70,0.08);
+    border: 1px solid rgba(230,57,70,0.35);
+    border-radius: 14px;
+    padding: 24px;
+    margin-top: 24px;
+    line-height: 1.8;
+  }
+  .grade-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 14px;
+  }
+  .grade-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px;
+  }
+  .grade-card .x { font-size: 34px; line-height: 1; color: var(--accent-red); margin-bottom: 10px; }
+  .grade-card .ok { font-size: 34px; line-height: 1; color: var(--accent-green); margin-bottom: 10px; }
+  .grade-title { font-weight: 700; margin-bottom: 8px; }
+  .grade-desc { color: var(--text-muted); font-size: 13px; line-height: 1.6; }
+  .compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 12px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+  }
+  .compare-table th, .compare-table td {
+    padding: 15px 14px;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+    text-align: left;
+  }
+  .compare-table th { color: var(--accent-gold); background: var(--surface2); font-size: 12px; letter-spacing: 1px; }
+  .compare-table tr:last-child td { border-bottom: 0; }
+  .bad { color: var(--accent-red); font-weight: 800; }
+  .good { color: var(--accent-green); font-weight: 800; }
+  .quote-small {
+    color: var(--text-muted);
+    font-size: 13px;
+    line-height: 1.8;
+    margin-top: 10px;
+  }
+  .mini-note { font-size:12px; color:#666; line-height:1.7; margin-top:14px; }
+
 </style>
 </head>
 <body>
@@ -527,99 +594,147 @@
 <!-- HERO -->
 <div class="hero">
   <div class="hero-tag">팩트체크 · 강원도지사 공약</div>
-  <h1>"공약 이행률 <em>93.7%</em>"<br>사실인가요?</h1>
-  <p class="hero-sub">김진태 강원특별자치도지사가 토론회에서 주장한 공약 이행률을<br>객관적인 데이터로 확인해봤습니다.</p>
+  <h1><em>93.7%</em> 자랑 뒤에 숨은<br>강원도의 초라한 성적표</h1>
+  <p class="hero-sub">김진태 후보는 공약 이행률을 자랑했습니다.<br>하지만 전국 평가표를 펼쳐보면, 강원도는 SA 등급 명단 어디에도 없습니다.</p>
+  <div class="warning-strip">
+    <div class="warning-chip"><b>SA 0개</b><span>종합·분야별 시도지사 SA 명단에 강원 없음</span></div>
+    <div class="warning-chip"><b>25.94%</b><span>공약 재정확보율, 전국 평균보다 낮음</span></div>
+    <div class="warning-chip"><b>12개</b><span>127개 공약 중 완전 완료는 12개뿐</span></div>
+  </div>
   <div class="hero-scroll">↓ 스크롤</div>
 </div>
 
-
-<!-- SECTION 1: 토론회 발언 -->
+<!-- SECTION 1: 핵심 메시지 -->
 <section class="fade-in">
-  <div class="section-label">토론회 핵심 장면</div>
-  <h2>도지사는 뭐라고 했고,<br>상대방은 뭐라고 <span class="hl">반박</span>했나?</h2>
-
-  <div class="debate-box">
-    <div class="speaker-tag tag-kim">🎤 김진태 후보 발언</div>
-    <div class="debate-quote">
-      "저는 공약 이행률이
-      <strong>93.7%</strong>
-      입니다. 전국적으로도 꽤 높은 편에 속할 겁니다.<br>매니페스토에서 그렇게 정한 겁니다."
-    </div>
-    <div class="fact-check-badge">⚠️ 이 숫자, 뭔가 이상합니다</div>
-  </div>
+  <div class="section-label">핵심 결론</div>
+  <h2>문제는 <span class="hl-gold">93.7%</span>라는 숫자 하나가 아니라,<br>그 숫자로 <span class="hl">실패한 성적표</span>를 가렸다는 점입니다.</h2>
 
   <div class="debate-box red">
-    <div class="speaker-tag tag-woo">❓ 우상호 후보 질문</div>
-    <div class="debate-quote" style="font-size:15px;">
-      "한국매니페스토실천본부가 2026년 4월 1일 발표한 자료에 따르면<br>
-      2025년 말까지 <strong class="red">공약 완료 이행률이 66.93%</strong><br>
-      이렇게 나와 있는데, 무슨 근거로 93.7%라고 하셨나요?"
+    <div class="speaker-tag tag-fact">📌 팩트체크 결론</div>
+    <div class="debate-quote">
+      강원도지사 공약평가,<br>
+      <strong class="red">SA 등급 없음</strong>
+      재정확보율도 25.94%, 집행률도 21.26%.<br>
+      전국 평균에도 못 미치는 성적표입니다.
     </div>
+    <div class="fact-check-badge">⚠️ “높은 이행률”보다 중요한 건 실제 성과와 예산입니다</div>
   </div>
 
-  <div class="debate-box green">
-    <div class="speaker-tag tag-kim">🎤 김진태 후보 반박</div>
-    <div class="debate-quote" style="font-size:15px; line-height:1.8;">
-      "공약 이행률이 있고 <b>공약 완료율이 따로 있습니다.</b><br>
-      공약을 착수해서 진행이 되면 공약이 이행된 것으로 봐서 그게 93.7%고요.<br>
-      완전 준공이 됐을 때가 공약 완료율, 그게 <strong class="green">60몇 %</strong>로 나와 있을 겁니다."
-    </div>
+  <div class="callout">
+    <b style="color:var(--text);">핵심요약</b><br>
+    “김진태 지사의 착수·진행 중인 공약까지 넓게 잡은 숫자를 앞세워도, 강원도는 전국 광역단체 평가에서 종합 SA도, 공약이행완료 SA도, 목표달성 SA도, 주민소통 SA도 받지 못했습니다. 도민에게 필요한 질문은 하나입니다. <b style="color:var(--accent-red);">자랑할 성과가 있었다면 왜 SA 등급은 하나도 없었나?</b>
   </div>
-
-  <p style="font-size:14px; color:var(--text-muted); margin-top:24px; line-height:1.8;">
-    💡 <b style="color:var(--text)">핵심 쟁점:</b> '착수·진행 중'인 공약까지 이행으로 볼 수 있는가,
-    아니면 실제로 완료된 공약을 기준으로 도민에게 설명해야 하는가의 문제입니다.
-    도청 기공식을 했으면 도청 이전도 "이행"했다고 볼 수 있냐는 반문이 나온 이유입니다.
-  </p>
 </section>
 
+<!-- SECTION 2: 토론회 말바꾸기/혼선 -->
+<section class="fade-in">
+  <div class="section-label">토론회 발언 흐름</div>
+  <h2>공약은 <span class="hl-gold">200개</span>라더니,<br>사업은 <span class="hl">120개</span>라며 자랑했습니다.</h2>
 
-<!-- SECTION 2: 두 숫자의 차이 -->
+  <div class="timeline">
+    <div class="timeline-card">
+      <div class="date-tag">5월 11일 첫 토론회</div>
+      <div class="debate-quote" style="font-size:16px;">
+        “당시 제 공약이 한 <b style="color:var(--accent-gold);">200개 정도</b> 됩니다. 그중 여덟 개, 4%를 내려놓은 겁니다. … 그 결과 공약 이행률이 <b style="color:var(--accent-gold);">93.7%</b>입니다.”
+      </div>
+      <div class="quote-small">핵심: 공약 개수와 이행률을 앞세워 도정 성과를 설명.</div>
+    </div>
+
+    <div class="timeline-card blue">
+      <div class="date-tag">5월 14일 다음 토론회</div>
+      <div class="debate-quote" style="font-size:16px;">
+        “미래 산업에서 지금 총 <b style="color:#74b3ce;">120개 사업</b>, <b style="color:#74b3ce;">4조 원치</b>가 진행되고 있습니다. 제 재직 기간 동안 거의 <b style="color:#74b3ce;">열흘에 하나씩</b> 새로운 것을 만들어 내고 있습니다.”
+      </div>
+      <div class="quote-small">핵심: 이번에는 ‘120개 사업·4조 원·열흘에 하나’라는 식으로 사업 개수와 규모를 강조.</div>
+    </div>
+
+    <div class="timeline-card red">
+      <div class="date-tag">최종 쟁점</div>
+      <div class="debate-quote" style="font-size:16px;">
+        공약 수, 사업 수, 이행률, 완료율이 뒤섞였습니다.<br>
+        그런데도 토론회에서는 “사실이 아니면 사퇴하겠다”는 취지의 강한 발언까지 나왔습니다.
+      </div>
+      <div class="quote-small">숫자를 정확히 구분하지 못한 사람이, 숫자로 도민을 설득하려 했다는 점이 핵심입니다.</div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <b style="color:var(--accent-red);">한 줄 정리</b><br>
+    공약이 몇 개인지도, 완료와 진행의 차이도, 공약과 사업의 범위도 명확히 설명하지 못했습니다. 이것은 단순 말실수가 아니라 <b style="color:var(--text);">도정 관리 능력의 문제</b>입니다.
+  </div>
+</section>
+
+<!-- SECTION 3: SA 등급 비교 -->
+<section class="fade-in">
+  <div class="section-label">전국 광역단체 비교</div>
+  <h2>전국은 SA를 받았는데,<br>강원도는 <span class="hl">어디에도 없습니다.</span></h2>
+
+  <div class="grade-grid">
+    <div class="grade-card">
+      <div class="x">✕</div>
+      <div class="grade-title">종합평가 SA</div>
+      <div class="grade-desc">서울·부산·광주·경기·충남·전남·경북·경남·제주 9곳. 강원 없음.</div>
+    </div>
+    <div class="grade-card">
+      <div class="x">✕</div>
+      <div class="grade-title">공약이행완료 분야 SA</div>
+      <div class="grade-desc">서울·광주·울산·경기·충남·전남·경북·경남·제주 9곳. 강원 없음.</div>
+    </div>
+    <div class="grade-card">
+      <div class="x">✕</div>
+      <div class="grade-title">2025년 목표달성 SA</div>
+      <div class="grade-desc">세종·경기·전남·경남·제주 5곳. 강원 없음.</div>
+    </div>
+    <div class="grade-card">
+      <div class="x">✕</div>
+      <div class="grade-title">주민소통 분야 SA</div>
+      <div class="grade-desc">부산·전북·경북·제주 4곳. 강원 없음.</div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: 숫자 해부 -->
 <section class="fade-in">
   <div class="section-label">숫자 해부</div>
-  <h2>같은 데이터로 나온<br><span class="hl-gold">93.7%</span>와 <span class="hl">66.93%</span></h2>
+  <h2><span class="hl-gold">93.7%</span>를 말할 수는 있어도,<br>그게 <span class="hl">잘했다는 증거</span>는 아닙니다.</h2>
 
   <div class="def-compare">
     <div class="def-card def-a">
-      <div class="def-title">김진태 도지사 기준</div>
+      <div class="def-title">김진태 후보가 앞세운 숫자</div>
       <div class="def-pct">93.7%</div>
       <div class="def-desc">
-        <b style="color:var(--text)">이행률</b><br>
-        "착수했거나 진행 중"인 공약 포함.<br>
-        도로 기공식을 했으면 이행한 것.<br>
-        예비타당성 통과도 이행으로 계산.
+        착수·정상추진까지 폭넓게 포함한 이행률 주장.<br>
+        “시작했다”, “진행 중이다”까지 성과처럼 보이게 만드는 숫자입니다.
       </div>
     </div>
     <div class="def-card def-b">
-      <div class="def-title">매니페스토 기준</div>
+      <div class="def-title">매니페스토 완료·이행 기준</div>
       <div class="def-pct">66.93%</div>
       <div class="def-desc">
-        <b style="color:var(--text)">완료·이행 공약률</b><br>
-        실제로 완료됐거나, 매년 완료되며<br>계속 추진 중인 공약만 포함.<br>
-        127개 중 85개.
+        127개 중 완료 12개 + 이행후 계속추진 73개 = 85개.<br>
+        도민이 체감할 실제 성과에 더 가까운 숫자입니다.
       </div>
     </div>
   </div>
 
   <div style="background:var(--surface2); border-radius:10px; padding:20px 24px; font-size:14px; line-height:1.8; color:var(--text-muted);">
     <b style="color:var(--text);">🔑 쉽게 말하면:</b><br>
-    "다이어트 시작했어"라고 말하면 이행이고,<br>
-    "목표 체중에 도달했어"가 완료입니다.<br>
-    93.7%는 <b style="color:var(--accent-gold);">"시작은 했다"</b>는 수치이고,<br>
-    66.93%는 <b style="color:var(--accent-green);">"실제로 됐다"</b>는 수치에 가깝습니다.
+    “다이어트 시작했어”라고 말하면 이행이고,<br>
+    “목표 체중에 도달했어”가 완료입니다.<br>
+    그런데 김진태 후보는 <b style="color:var(--accent-gold);">시작했다는 숫자</b>를 앞세워,
+    <b style="color:var(--accent-red);">실제로 얼마나 해냈는지</b>를 흐렸습니다.
   </div>
 </section>
 
-
-<!-- SECTION 3: 127개 공약 현황 -->
+<!-- SECTION 5: 127개 공약 현황 -->
 <section class="fade-in">
   <div class="section-label">공약 127개 전체 현황</div>
-  <h2>127개 공약,<br>지금 어디쯤 <span class="hl-gold">와 있나</span>?</h2>
+  <h2>127개 공약 중,<br>완전히 끝난 건 <span class="hl">12개뿐</span>입니다.</h2>
 
   <div class="stat-grid">
     <div class="stat-card">
       <div class="stat-number num-green">12</div>
-      <div class="stat-label">✅ 완료<br>(9.4%)</div>
+      <div class="stat-label">✅ 완료<br>9.4%</div>
     </div>
     <div class="stat-card">
       <div class="stat-number num-gold">73</div>
@@ -627,7 +742,7 @@
     </div>
     <div class="stat-card">
       <div class="stat-number num-blue">34</div>
-      <div class="stat-label">🔵 정상추진<br>(진행 중)</div>
+      <div class="stat-label">🔵 정상추진<br>진행 중</div>
     </div>
     <div class="stat-card">
       <div class="stat-number num-red">4</div>
@@ -648,165 +763,105 @@
     <div class="bar-track"><div class="bar-fill bar-fill-green" style="--w:9.4%;"></div></div>
   </div>
   <div class="bar-wrapper">
-    <div class="bar-label"><span>완료 + 이행후계속추진 <strong>(66.93%)</strong></span><span style="color:var(--accent-gold);font-weight:700;">85개 / 127개</span></div>
+    <div class="bar-label"><span>완료 + 이행후계속추진</span><span style="color:var(--accent-gold);font-weight:700;">85개 / 127개 = 66.93%</span></div>
     <div class="bar-track"><div class="bar-fill bar-fill-gold" style="--w:66.93%;"></div></div>
   </div>
   <div class="bar-wrapper">
-    <div class="bar-label"><span>정상추진까지 포함 <strong>(93.7%)</strong></span><span style="color:#74b3ce;font-weight:700;">119개 / 127개</span></div>
-    <div class="bar-track"><div class="bar-fill" style="--w:93.7%; background:linear-gradient(90deg,#1d3557,#457b9d);"></div></div>
-  </div>
-
-  <p style="font-size:13px; color:var(--text-muted); margin-top:8px;">
-    ※ 공약 수는 매니페스토 기준 127개 / 강원도는 공약이 165개라고 주장 (도지사 발언)
-  </p>
-
-  <hr class="divider">
-
-  <p style="font-size:14px; line-height:1.8; color:var(--text-muted);">
-    특히 주목할 점: <b style="color:var(--text);">완전히 완료된 공약은 단 12개(9.4%)</b>입니다.<br>
-    임기 4년 동안 127개를 약속했는데 9개 중 1개만 끝났습니다.
-  </p>
-</section>
-
-
-<!-- SECTION 4: 폐기 공약 -->
-<section class="fade-in">
-  <div class="section-label">약속을 취소한 공약들</div>
-  <h2>아예 <span class="hl">없던 일</span>이 된<br>공약 3개</h2>
-
-  <div style="display:flex; flex-direction:column; gap:12px;">
-    <div style="background:var(--surface); border:1px solid rgba(230,57,70,0.3); border-radius:10px; padding:20px 24px;">
-      <div style="font-size:11px; color:var(--accent-red); letter-spacing:2px; margin-bottom:6px;">CANCELED</div>
-      <div style="font-size:16px; font-weight:600;">탄소중립 신재생에너지 클러스터 조성</div>
-    </div>
-    <div style="background:var(--surface); border:1px solid rgba(230,57,70,0.3); border-radius:10px; padding:20px 24px;">
-      <div style="font-size:11px; color:var(--accent-red); letter-spacing:2px; margin-bottom:6px;">CANCELED</div>
-      <div style="font-size:16px; font-weight:600;">DMZ 세계평화공원 조성</div>
-    </div>
-    <div style="background:var(--surface); border:1px solid rgba(230,57,70,0.3); border-radius:10px; padding:20px 24px;">
-      <div style="font-size:11px; color:var(--accent-red); letter-spacing:2px; margin-bottom:6px;">CANCELED</div>
-      <div style="font-size:16px; font-weight:600;">한방산업특구 지정</div>
-    </div>
+    <div class="bar-label"><span>김진태 후보가 말한 이행률</span><span style="color:var(--accent-red);font-weight:700;">93.7%</span></div>
+    <div class="bar-track"><div class="bar-fill bar-fill-red" style="--w:93.7%;"></div></div>
   </div>
 </section>
 
-
-<!-- SECTION 5: 재정 현황 -->
+<!-- SECTION 6: 재정 현황 -->
 <section class="fade-in">
-  <div class="section-label">돈 이야기</div>
-  <h2>54조짜리 계획,<br>돈은 <span class="hl">얼마나 확보</span>됐나?</h2>
+  <div class="section-label">돈 없는 공약</div>
+  <h2>공약은 크게 말했지만,<br>예산 확보는 <span class="hl">전국 평균 아래</span>입니다.</h2>
 
-  <div class="finance-bar-big">
-    <div class="title">전체 공약 재정 계획</div>
+  <table class="compare-table">
+    <thead>
+      <tr><th>구분</th><th>강원도</th><th>전국 평균</th><th>판정</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>공약 재정확보율</td><td class="bad">25.94%</td><td>35.73%</td><td class="bad">평균 미달</td></tr>
+      <tr><td>공약 재정집행률</td><td class="bad">21.26%</td><td>24.21%</td><td class="bad">평균 미달</td></tr>
+      <tr><td>재정확보율 50% 이상</td><td class="bad">해당 없음</td><td>서울·울산·경기·제주</td><td class="bad">상위권 아님</td></tr>
+      <tr><td>재정집행률 30% 이상</td><td class="bad">해당 없음</td><td>울산·세종·경기·전북·전남·제주</td><td class="bad">상위권 아님</td></tr>
+    </tbody>
+  </table>
+
+  <div class="finance-bar-big" style="margin-top:24px;">
+    <div class="title">강원도 공약 계획 총계</div>
     <div class="amount">54조 8,326억 원</div>
-    <div class="stacked-bar">
-      <div class="s1" style="width:25.94%;"></div>
-      <div style="width:74.06%; background:var(--surface2);"></div>
+    <div class="bar-wrapper" style="margin:0;">
+      <div class="bar-label"><span>확보된 예산</span><span style="color:var(--accent-red);font-weight:700;">25.94%</span></div>
+      <div class="bar-track"><div class="bar-fill bar-fill-red" style="--w:25.94%;"></div></div>
     </div>
-    <div class="stacked-legend">
-      <span><div class="dot-12" style="background:#264653;"></div> 확보됨 (25.94%)</span>
-      <span><div class="dot-12" style="background:var(--surface2); border:1px solid #555;"></div> 미확보 (74.06%)</span>
-    </div>
+    <p class="mini-note">총 소요재정 54,832,678백만 원 중 확보재정 14,222,487백만 원.</p>
   </div>
 
-  <div class="stat-grid" style="margin-top:16px;">
-    <div class="stat-card">
-      <div class="stat-number num-gold">25.9%</div>
-      <div class="stat-label">전체 재정<br>확보율</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-number num-red">21.3%</div>
-      <div class="stat-label">전체 재정<br>집행률</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-number num-green">82.4%</div>
-      <div class="stat-label">임기 내 계획<br>확보율</div>
-    </div>
+  <div class="callout">
+    <b style="color:var(--accent-red);">핵심</b><br>
+    “4조 원 사업”, “열흘에 하나”라는 말보다 중요한 것은 실제 예산입니다. 계획만 있고 돈이 없으면 공약은 도민의 삶으로 오지 않습니다.
   </div>
-
-  <hr class="divider">
-
-  <div class="section-label">돈이 단 한 푼도 확보 안 된 대형 사업들</div>
-  <ul class="zero-list" style="margin-top:16px;">
-    <li class="zero-item">
-      <div class="zero-name">철원~고성 고속도로 건설</div>
-      <div class="zero-amount">5조 5,459억</div>
-      <div class="zero-badge">확보 0원</div>
-    </li>
-    <li class="zero-item">
-      <div class="zero-name">중앙고속도로 철원 연장</div>
-      <div class="zero-amount">3조 2,608억</div>
-      <div class="zero-badge">확보 0원</div>
-    </li>
-    <li class="zero-item">
-      <div class="zero-name">원주~춘천~철원 철도 건설</div>
-      <div class="zero-amount">3조 3,475억</div>
-      <div class="zero-badge">확보 0원</div>
-    </li>
-    <li class="zero-item">
-      <div class="zero-name">속초~고성 고속도로 건설</div>
-      <div class="zero-amount">2조 711억</div>
-      <div class="zero-badge">확보 0원</div>
-    </li>
-    <li class="zero-item">
-      <div class="zero-name">GTX-B 노선 춘천 연장</div>
-      <div class="zero-amount">1,810억</div>
-      <div class="zero-badge">확보 0원</div>
-    </li>
-    <li class="zero-item">
-      <div class="zero-name">연천~철원 전철화</div>
-      <div class="zero-amount">3,126억</div>
-      <div class="zero-badge">확보 0원</div>
-    </li>
-  </ul>
-
-  <p style="font-size:13px; color:var(--text-muted); margin-top:20px; line-height:1.8;">
-    ※ 영월~양구 강원내륙고속도로(6조 5,416억)는 단 3억 원만 확보.<br>
-    삼척~영월 고속도로(5조 6,167억)는 50억 원만 확보된 상태입니다.
-  </p>
 </section>
 
+<!-- SECTION 7: 폐기·부진 공약 -->
+<section class="fade-in">
+  <div class="section-label">폐기·부진 공약</div>
+  <h2>이미 사라졌거나,<br>제대로 못 가는 공약도 있습니다.</h2>
 
-<!-- SECTION 6: 결론 -->
-<section class="fade-in" style="border-bottom:none;">
-  <div class="section-label">정리</div>
-  <h2>결론적으로<br>무엇이 <span class="hl-gold">사실</span>인가?</h2>
+  <ul class="zero-list">
+    <li class="zero-item"><span class="zero-name">탄소중립 신재생에너지 클러스터 조성</span><span class="zero-badge">폐기</span></li>
+    <li class="zero-item"><span class="zero-name">DMZ 세계평화공원 조성</span><span class="zero-badge">폐기</span></li>
+    <li class="zero-item"><span class="zero-name">한방산업특구 지정</span><span class="zero-badge">폐기</span></li>
+    <li class="zero-item"><span class="zero-name">전문체육 활성화 추진</span><span class="zero-badge">일부추진</span></li>
+    <li class="zero-item"><span class="zero-name">속초~고성 고속도로 건설</span><span class="zero-badge">일부추진</span></li>
+    <li class="zero-item"><span class="zero-name">홍천 산림집적단지 조성</span><span class="zero-badge">일부추진</span></li>
+    <li class="zero-item"><span class="zero-name">국립 강원권생물자원관 건립</span><span class="zero-badge">일부추진</span></li>
+    <li class="zero-item"><span class="zero-name">북양양IC~떡밭재 연결도로 개설</span><span class="zero-badge">기타</span></li>
+  </ul>
+</section>
 
-  <div style="display:flex; flex-direction:column; gap:16px; margin-bottom:40px;">
-    <div style="background:var(--surface); border-radius:12px; padding:24px; border:1px solid var(--border); display:flex; gap:16px; align-items:flex-start;">
-      <div style="font-size:24px; flex-shrink:0;">✅</div>
+<!-- SECTION 8: 결론 -->
+<section class="fade-in">
+  <div class="section-label">결론</div>
+  <h2>숫자는 컸지만,<br>성적표는 <span class="hl">초라했습니다.</span></h2>
+
+  <div style="display:grid; gap:14px;">
+    <div style="background:var(--surface); border-radius:12px; padding:24px; border:1px solid rgba(230,57,70,0.3); display:flex; gap:16px; align-items:flex-start;">
+      <div style="font-size:24px; flex-shrink:0;">❌</div>
       <div>
-        <div style="font-weight:700; margin-bottom:6px;">93.7%는 틀린 말이 아닙니다</div>
-        <div style="font-size:13px; color:var(--text-muted); line-height:1.7;">"착수·진행 중" 포함 시 실제로 그 수치가 나옵니다. 단, 이 기준은 공약을 아직 완성하지 않았어도 이행으로 간주하는 방식입니다.</div>
-      </div>
-    </div>
-    <div style="background:var(--surface); border-radius:12px; padding:24px; border:1px solid var(--border); display:flex; gap:16px; align-items:flex-start;">
-      <div style="font-size:24px; flex-shrink:0;">⚠️</div>
-      <div>
-        <div style="font-weight:700; margin-bottom:6px;">도민이 체감하는 '완료율'은 66.93%</div>
-        <div style="font-size:13px; color:var(--text-muted); line-height:1.7;">매니페스토 기준 완료+이행후계속추진은 66.93%. 강원도청 자체 발표(68.5%)도 비슷한 수준. 사실상 "완성된 공약" 위주로 따지면 이 수치가 더 정확합니다.</div>
+        <div style="font-weight:700; margin-bottom:6px; color:var(--accent-red);">SA 등급 없음</div>
+        <div style="font-size:13px; color:var(--text-muted); line-height:1.7;">전국 광역단체 종합평가와 주요 분야별 SA 명단에서 강원도지사는 보이지 않습니다.</div>
       </div>
     </div>
     <div style="background:var(--surface); border-radius:12px; padding:24px; border:1px solid rgba(230,57,70,0.3); display:flex; gap:16px; align-items:flex-start;">
-      <div style="font-size:24px; flex-shrink:0;">❗</div>
+      <div style="font-size:24px; flex-shrink:0;">💸</div>
       <div>
-        <div style="font-weight:700; margin-bottom:6px; color:var(--accent-red);">완전히 완료된 공약은 127개 중 12개(9.4%)</div>
-        <div style="font-size:13px; color:var(--text-muted); line-height:1.7;">대형 SOC 사업 다수가 예산 확보조차 안 된 상태. 총 54조 계획 중 75%는 아직 돈도 없는 상황. 3개 공약은 아예 폐기되었습니다.</div>
+        <div style="font-weight:700; margin-bottom:6px; color:var(--accent-red);">예산 확보도 평균 이하</div>
+        <div style="font-size:13px; color:var(--text-muted); line-height:1.7;">공약 재정확보율 25.94%, 집행률 21.26%. 전국 평균보다 낮습니다.</div>
+      </div>
+    </div>
+    <div style="background:var(--surface); border-radius:12px; padding:24px; border:1px solid rgba(230,57,70,0.3); display:flex; gap:16px; align-items:flex-start;">
+      <div style="font-size:24px; flex-shrink:0;">🔢</div>
+      <div>
+        <div style="font-weight:700; margin-bottom:6px; color:var(--accent-red);">공약·사업 개수 혼선</div>
+        <div style="font-size:13px; color:var(--text-muted); line-height:1.7;">200개 공약, 120개 사업, 93.7% 이행률, 66.93% 완료·이행률이 뒤섞였습니다. 도민에게 필요한 것은 숫자 자랑이 아니라 정확한 설명입니다.</div>
       </div>
     </div>
   </div>
 
   <div class="conclusion">
     <div style="font-size:32px; margin-bottom:16px;">🏔️</div>
-    <h3 style="font-family:'Noto Serif KR', serif; font-size:20px; margin-bottom:16px;">공약 이행률은 <em>어떤 기준으로 재느냐</em>가 핵심입니다</h3>
-    <p>93.7%와 66.93%는 같은 데이터를 다른 잣대로 본 것입니다. 유권자가 기억해야 할 건, "시작했느냐"가 아니라 "실제로 이뤄졌느냐"입니다.</p>
-    <p style="margin-top:0;">"기공식을 했으면 이행한 것"이라는 논리라면, 강원도청 이전 기공식도 이행 완료가 됩니다. 여러분은 어떤 기준이 맞다고 생각하시나요?</p>
+    <h3 style="font-family:'Noto Serif KR', serif; font-size:20px; margin-bottom:16px;">공약 이행률 93.7%보다 중요한 질문</h3>
+    <p>정말 일을 잘했다면 왜 강원도는 SA 등급을 하나도 받지 못했을까요?</p>
+    <p style="margin-top:0;">공약은 숫자놀이가 아닙니다. 도민과의 약속이고, 예산과 결과로 증명해야 할 성적표입니다.</p>
   </div>
 </section>
 
 <div class="source-note">
-  출처: 한국매니페스토실천본부 (2026.4.1 발표 기준, 2025년 12월 말 현황)<br>
-  강원특별자치도 공개자료 | 강원지사 도지사 토론회 발언 기록
+  출처: 한국매니페스토실천본부 「2026 전국 시도지사·교육감 공약이행 및 정보공개 평가 결과」(2026.4.1 발표, 2025년 12월 말 기준)<br>
+  강원특별자치도 공개자료 | 강원도지사 후보자 토론회 발언 정리
 </div>
 
 <script>
@@ -815,7 +870,6 @@
     entries.forEach(e => {
       if (e.isIntersecting) {
         e.target.classList.add('visible');
-        // animate bars
         e.target.querySelectorAll('.bar-fill').forEach(b => b.classList.add('animated'));
       }
     });
